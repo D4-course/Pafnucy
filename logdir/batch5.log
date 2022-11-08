@@ -1,0 +1,576 @@
+
+---- FEATURES ----
+
+atomic properties: ['B', 'C', 'N', 'O', 'P', 'S', 'Se', 'halogen', 'metal', 'hyb', 'heavyvalence', 'heterovalence', 'partialcharge', 'moltype', 'hydrophobic', 'aromatic', 'acceptor', 'donor', 'ring']
+charges: mean=-0.142978, sd=0.42579
+use sd as scaling factor
+
+---- DATA ----
+
+
+examples:
+  ligand
+   acceptor 1.0
+   O 1.0
+   heavyvalence 1.0
+   hyb 2.0
+   halogen 0.0
+   aromatic 0.0
+   B 0.0
+   moltype 1.0
+   heterovalence 0.0
+   P 0.0
+   N 0.0
+   hydrophobic 0.0
+   metal 0.0
+   Se 0.0
+   C 0.0
+   ring 0.0
+   donor 0.0
+   partialcharge -1.32976
+   S 0.0
+
+  protein
+   acceptor 1.0
+   O 1.0
+   heavyvalence 1.0
+   hyb 2.0
+   halogen 0.0
+   aromatic 0.0
+   B 0.0
+   moltype -1.0
+   heterovalence 0.0
+   P 0.0
+   N 0.0
+   hydrophobic 0.0
+   metal 0.0
+   Se 0.0
+   C 0.0
+   ring 0.0
+   donor 0.0
+   partialcharge -1.33376
+   S 0.0
+
+baseline mse: training=3.49735272306, validation=4.22061779327
+1000 validation samples
+290 test samples
+11906 training samples
+
+---- MODEL ----
+
+20.0 A box
+19 features
+
+convolutional layers: 64, 128, 256 channels, 5A patch + max pooling with 2A patch
+fully connected layers: 1000, 500, 200 neurons
+regularization: dropout (keep 0.5) and L2 (lambda 0.001)
+
+learning rate 1e-05
+2381 batches, 5 examples each
+200 validation batches
+58 test batches
+
+20 epochs, best 10 saved
+
+---- TRAINING ----
+
+rotation 0
+rotation 1
+rotation 2
+rotation 3
+rotation 4
+rotation 5
+rotation 6
+rotation 7
+rotation 8
+rotation 9
+rotation 10
+rotation 11
+rotation 12
+rotation 13
+rotation 14
+rotation 15
+rotation 16
+rotation 17
+rotation 18
+rotation 19
+rotation 20
+rotation 21
+rotation 22
+rotation 23
+epoch: 0 train error: 2.72445994644, validation error: 3.05364088684
+rotation 0
+rotation 1
+rotation 2
+rotation 3
+rotation 4
+rotation 5
+rotation 6
+rotation 7
+rotation 8
+rotation 9
+rotation 10
+rotation 11
+rotation 12
+rotation 13
+rotation 14
+rotation 15
+rotation 16
+rotation 17
+rotation 18
+rotation 19
+rotation 20
+rotation 21
+rotation 22
+rotation 23
+epoch: 1 train error: 2.3930023772, validation error: 2.608320708
+rotation 0
+rotation 1
+rotation 2
+rotation 3
+rotation 4
+rotation 5
+rotation 6
+rotation 7
+rotation 8
+rotation 9
+rotation 10
+rotation 11
+rotation 12
+rotation 13
+rotation 14
+rotation 15
+rotation 16
+rotation 17
+rotation 18
+rotation 19
+rotation 20
+rotation 21
+rotation 22
+rotation 23
+epoch: 2 train error: 2.48601089577, validation error: 2.73328347601
+rotation 0
+rotation 1
+rotation 2
+rotation 3
+rotation 4
+rotation 5
+rotation 6
+rotation 7
+rotation 8
+rotation 9
+rotation 10
+rotation 11
+rotation 12
+rotation 13
+rotation 14
+rotation 15
+rotation 16
+rotation 17
+rotation 18
+rotation 19
+rotation 20
+rotation 21
+rotation 22
+rotation 23
+epoch: 3 train error: 2.14251294898, validation error: 2.28552944697
+rotation 0
+rotation 1
+rotation 2
+rotation 3
+rotation 4
+rotation 5
+rotation 6
+rotation 7
+rotation 8
+rotation 9
+rotation 10
+rotation 11
+rotation 12
+rotation 13
+rotation 14
+rotation 15
+rotation 16
+rotation 17
+rotation 18
+rotation 19
+rotation 20
+rotation 21
+rotation 22
+rotation 23
+epoch: 4 train error: 2.11801186265, validation error: 2.28004069105
+rotation 0
+rotation 1
+rotation 2
+rotation 3
+rotation 4
+rotation 5
+rotation 6
+rotation 7
+rotation 8
+rotation 9
+rotation 10
+rotation 11
+rotation 12
+rotation 13
+rotation 14
+rotation 15
+rotation 16
+rotation 17
+rotation 18
+rotation 19
+rotation 20
+rotation 21
+rotation 22
+rotation 23
+epoch: 5 train error: 2.07050110824, validation error: 2.33953052349
+rotation 0
+rotation 1
+rotation 2
+rotation 3
+rotation 4
+rotation 5
+rotation 6
+rotation 7
+rotation 8
+rotation 9
+rotation 10
+rotation 11
+rotation 12
+rotation 13
+rotation 14
+rotation 15
+rotation 16
+rotation 17
+rotation 18
+rotation 19
+rotation 20
+rotation 21
+rotation 22
+rotation 23
+epoch: 6 train error: 1.91927144339, validation error: 2.14056336708
+rotation 0
+rotation 1
+rotation 2
+rotation 3
+rotation 4
+rotation 5
+rotation 6
+rotation 7
+rotation 8
+rotation 9
+rotation 10
+rotation 11
+rotation 12
+rotation 13
+rotation 14
+rotation 15
+rotation 16
+rotation 17
+rotation 18
+rotation 19
+rotation 20
+rotation 21
+rotation 22
+rotation 23
+epoch: 7 train error: 1.85131471994, validation error: 2.12509492062
+rotation 0
+rotation 1
+rotation 2
+rotation 3
+rotation 4
+rotation 5
+rotation 6
+rotation 7
+rotation 8
+rotation 9
+rotation 10
+rotation 11
+rotation 12
+rotation 13
+rotation 14
+rotation 15
+rotation 16
+rotation 17
+rotation 18
+rotation 19
+rotation 20
+rotation 21
+rotation 22
+rotation 23
+epoch: 8 train error: 1.76961198032, validation error: 2.17153610989
+rotation 0
+rotation 1
+rotation 2
+rotation 3
+rotation 4
+rotation 5
+rotation 6
+rotation 7
+rotation 8
+rotation 9
+rotation 10
+rotation 11
+rotation 12
+rotation 13
+rotation 14
+rotation 15
+rotation 16
+rotation 17
+rotation 18
+rotation 19
+rotation 20
+rotation 21
+rotation 22
+rotation 23
+epoch: 9 train error: 1.70434977313, validation error: 2.12033041663
+rotation 0
+rotation 1
+rotation 2
+rotation 3
+rotation 4
+rotation 5
+rotation 6
+rotation 7
+rotation 8
+rotation 9
+rotation 10
+rotation 11
+rotation 12
+rotation 13
+rotation 14
+rotation 15
+rotation 16
+rotation 17
+rotation 18
+rotation 19
+rotation 20
+rotation 21
+rotation 22
+rotation 23
+epoch: 10 train error: 1.66371468771, validation error: 2.1417165783
+rotation 0
+rotation 1
+rotation 2
+rotation 3
+rotation 4
+rotation 5
+rotation 6
+rotation 7
+rotation 8
+rotation 9
+rotation 10
+rotation 11
+rotation 12
+rotation 13
+rotation 14
+rotation 15
+rotation 16
+rotation 17
+rotation 18
+rotation 19
+rotation 20
+rotation 21
+rotation 22
+rotation 23
+epoch: 11 train error: 1.70946689512, validation error: 2.43289261326
+rotation 0
+rotation 1
+rotation 2
+rotation 3
+rotation 4
+rotation 5
+rotation 6
+rotation 7
+rotation 8
+rotation 9
+rotation 10
+rotation 11
+rotation 12
+rotation 13
+rotation 14
+rotation 15
+rotation 16
+rotation 17
+rotation 18
+rotation 19
+rotation 20
+rotation 21
+rotation 22
+rotation 23
+epoch: 12 train error: 1.57370746639, validation error: 2.20780553073
+rotation 0
+rotation 1
+rotation 2
+rotation 3
+rotation 4
+rotation 5
+rotation 6
+rotation 7
+rotation 8
+rotation 9
+rotation 10
+rotation 11
+rotation 12
+rotation 13
+rotation 14
+rotation 15
+rotation 16
+rotation 17
+rotation 18
+rotation 19
+rotation 20
+rotation 21
+rotation 22
+rotation 23
+epoch: 13 train error: 1.46723685944, validation error: 2.07129360124
+rotation 0
+rotation 1
+rotation 2
+rotation 3
+rotation 4
+rotation 5
+rotation 6
+rotation 7
+rotation 8
+rotation 9
+rotation 10
+rotation 11
+rotation 12
+rotation 13
+rotation 14
+rotation 15
+rotation 16
+rotation 17
+rotation 18
+rotation 19
+rotation 20
+rotation 21
+rotation 22
+rotation 23
+epoch: 14 train error: 1.30360943021, validation error: 2.21629278582
+rotation 0
+rotation 1
+rotation 2
+rotation 3
+rotation 4
+rotation 5
+rotation 6
+rotation 7
+rotation 8
+rotation 9
+rotation 10
+rotation 11
+rotation 12
+rotation 13
+rotation 14
+rotation 15
+rotation 16
+rotation 17
+rotation 18
+rotation 19
+rotation 20
+rotation 21
+rotation 22
+rotation 23
+epoch: 15 train error: 1.211727217, validation error: 2.17498047918
+rotation 0
+rotation 1
+rotation 2
+rotation 3
+rotation 4
+rotation 5
+rotation 6
+rotation 7
+rotation 8
+rotation 9
+rotation 10
+rotation 11
+rotation 12
+rotation 13
+rotation 14
+rotation 15
+rotation 16
+rotation 17
+rotation 18
+rotation 19
+rotation 20
+rotation 21
+rotation 22
+rotation 23
+epoch: 16 train error: 1.19650576144, validation error: 2.31473232567
+rotation 0
+rotation 1
+rotation 2
+rotation 3
+rotation 4
+rotation 5
+rotation 6
+rotation 7
+rotation 8
+rotation 9
+rotation 10
+rotation 11
+rotation 12
+rotation 13
+rotation 14
+rotation 15
+rotation 16
+rotation 17
+rotation 18
+rotation 19
+rotation 20
+rotation 21
+rotation 22
+rotation 23
+epoch: 17 train error: 1.06005333803, validation error: 2.24424939595
+rotation 0
+rotation 1
+rotation 2
+rotation 3
+rotation 4
+rotation 5
+rotation 6
+rotation 7
+rotation 8
+rotation 9
+rotation 10
+rotation 11
+rotation 12
+rotation 13
+rotation 14
+rotation 15
+rotation 16
+rotation 17
+rotation 18
+rotation 19
+rotation 20
+rotation 21
+rotation 22
+rotation 23
+epoch: 18 train error: 1.02799576815, validation error: 2.39009314932
+rotation 0
+rotation 1
+rotation 2
+rotation 3
+rotation 4
+rotation 5
+rotation 6
+rotation 7
+rotation 8
+rotation 9
+rotation 10
+rotation 11
+rotation 12
+rotation 13
+rotation 14
+rotation 15
+rotation 16
+rotation 17
+rotation 18
+rotation 19
+rotation 20
+rotation 21
+rotation 22
+rotation 23
+epoch: 19 train error: 0.940974283811, validation error: 2.25613022741
