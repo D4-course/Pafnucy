@@ -11,7 +11,7 @@ The manuscript describing Pafnucy was published in Bioinformatics DOI: 10.1093/b
 ```
 git clone https://github.com/D4-course/Pafnucy.git
 ```
-- Download [trained models]([https://iiitaphyd-my.sharepoint.com/:f:/g/personal/rishal_aggarwal_research_iiit_ac_in/EoJSrvuiKPlAluOJLjTzfpcBT2fVRdq8Sr4BMmil0_tvHw?e=Kj7reS](https://iiitaphyd-my.sharepoint.com/:u:/g/personal/savitha_viswanadh_research_iiit_ac_in/EZRehdh5o0FIpLbiPAb97r8By7_YZaRP7oQZufSOqz3FnA?e=ZuT8L4)) and load them into ```Pafnucy/results``` folder in the parent repo. 
+- Download [trained models](https://iiitaphyd-my.sharepoint.com/:u:/g/personal/savitha_viswanadh_research_iiit_ac_in/EZRehdh5o0FIpLbiPAb97r8By7_YZaRP7oQZufSOqz3FnA?e=ZuT8L4) and load them into ```Pafnucy/results``` folder in the parent repo. 
 - Execute ```run.sh``` that will build the docker image, run a container where the frontend and backend will be executed automatically
 ```
 ./run.sh
